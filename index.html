@@ -11,15 +11,33 @@
 <body>
 <nav id="desktop-nav">
     <div class="logo">
-      Floribert ISHIMWE
+      John Doe
     </div>
     <ul class="nav-links">
       <li><a href="#About">About</a></li>
       <li><a href="#Experience">Experience</a></li>
-      <li><a href="#">Link 3</a></li>
-      <li><a href="#">Link 4</a></li>
+      <li><a href="#Project">Project</a></li>
+      <li><a href="#Contact">Contact</a></li>
     </ul>
   </nav>
+<nav id="humburger-nav">
+<div class="logo">John Doe</div>
+<div class="humburger-menu">
+<div class="humburger-icon" onclick="toggleMenu()">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+<div class="menu-links">
+<ul>
+  <li><a href="#About" onclick="toggleMenu()">About</a></li>
+  <li><a href="#Experience" onclick="toggleMenu()">Experience</a></li>
+  <li><a href="#Project"  onclick="toggleMenu()">Project</a></li>
+  <li><a href="#Contact"  onclick="toggleMenu()">Contact</a></li>
+</ul>
+</div>
+</div>
+ </nav>
 <script src="scripts.js"></script>
 </body>
 </html>
