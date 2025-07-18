@@ -6,7 +6,7 @@
     <title>portifolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="stylesheet" href="mediaquerries.css">
 </head>
 <body>
 <nav id="desktop-nav">
@@ -23,12 +23,13 @@
 <nav id="humburger-nav">
 <div class="logo">John Doe</div>
 <div class="humburger-menu">
-<div class="humburger-icon" onclick="toggleMenu()">
+<div class="humburger-icon"  onclick="toggleMenu()">
   <span></span>
   <span></span>
   <span></span>
 </div>
 <div class="menu-links">
+  <!-- The menu links will be toggled by JavaScript -->
 <ul>
   <li><a href="#About" onclick="toggleMenu()">About</a></li>
   <li><a href="#Experience" onclick="toggleMenu()">Experience</a></li>
@@ -36,8 +37,31 @@
   <li><a href="#Contact"  onclick="toggleMenu()">Contact</a></li>
 </ul>
 </div>
+
 </div>
- </nav>
+</nav>
+
+<section id="profile">
+  <div class="section__pic-container">
+    <img src="./assets/profile-pic.png" alt="Profile Picture">
+  </div>
+
+  <div class="section__text-container">
+    <p class="section__text__p1">Hello, I'm</p>
+    <h2 class="title">John Doe</h2>
+    <p class="section__text__p2">Web Developer</p>
+
+    <div class="btn-container">
+      <button class="btn btn-color2" onclick="window.open('./assets/resume-example.pdf')">Download CV</button>
+      <button class="btn btn-color1" onclick="location.href ='./#Contact' ">Contact Info</button>
+    </div>
+
+    <div class="socials-container">
+      <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon" onclick="window.open('https://www.linkedin.com/in/floribert-ishimwe-891541284/', '_blank')">
+      <img src="./assets/github.png" alt="My GitHub profile" class="icon" onclick="window.open('https://github.com/floribertishimwe', '_blank')">
+    </div>
+  </div>
+</section>
+
 <script src="scripts.js"></script>
-</body>
 </html>
