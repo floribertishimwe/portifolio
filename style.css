@@ -183,7 +183,7 @@ section {
 .section__text__p1{
 
     text-align: center;
-    font-size: 1.75rem;
+    font-size: 1rem;
     margin-bottom: 0.5rem;
 }
 .section__text__p2 {
@@ -216,10 +216,10 @@ section {
     /* width: 40px; */
     height: 2rem;
     border-radius: 50%;
-    background-color: white;
-    box-shadow: 0 0 4px #0000001a;
+    /* background-color: white; */
+    box-shadow: 0 0 1px #0000001a;
     /* object-fit: contain; */
-    padding: 0.5rem;
+    padding: 0.1rem;
     transition: transform 0.2s ease;
 }
 
@@ -241,12 +241,89 @@ section {
 
 }
 
-.btn-color1 ,.btn-color2{
-    cursor: pointer;
+.btn-color-1 ,.btn-color-2{
     border:rgb(53, 53, 53) 0.1rem solid ;
     /* background-color: white; */
+}
+
+.btn-color-1:hover ,.btn-color-2:hover{
+    background-color: rgb(53, 53, 53);
+    color: white;
+}
+
+.btn-color-1,.btn-color-2:hover{
+    background-color: rgb(53, 53, 53);
+    color: white;
+}
+.btn-color-1:hover{
+    background-color: rgb(0, 0, 0);
+}
+.btn-color-2{
+    background: none;
+}
+.btn-color-2:hover{
+    border: rgb(255, 255, 255) 0.1rem solid;
+}
+.btn-container {
+    gap: 1rem;
+}
+
+#about{
+position: relative;
 
 }
+
+.about-containers{
+    gap:2rem;
+    margin-bottom:2rem;
+    margin-top: 2rem;
+}
+.about-details-container{
+    justify-content: center;
+    flex-direction: column;
+}
+.about-containers,.about-details-container{
+    display: flex;
+}
+
+.about-pic{
+
+    border-radius: 2rem;
+}
+.arrow{
+position: absolute;
+right: -5rem;
+bottom: 2.5rem;
+}
+
+.details-container{
+
+padding: 1.5rem;
+flex: 1;
+background: white;
+border-radius: 2rem;
+border:rgb(53, 53, 53) 0.1rem solid;
+border-color: rgb(163, 163, 163);
+text-align: center;
+}
+
+.section-container{
+    gap: 4rem;
+    height: 80%;  
+}
+
+.section__pic-container{
+
+    height:400px;
+    width: 400px;
+    margin: auto 0;
+
+}
+
+
+
+
+
 
 
 
