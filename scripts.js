@@ -5,7 +5,7 @@ function toggleMenu() {
     menu.classList.toggle('open');
     icon.classList.toggle('open');
 }
-
+document.getElementById('year').textContent = new Date().getFullYear();
 
 
 
