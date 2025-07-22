@@ -46,10 +46,10 @@ section{
 }
 }
 
-@media screen and (max-width:600px){
-    #contact, footer{
-        height:40vh;
-    }
+ @media screen and (max-width:600px){
+    /*
+    
+  
 
     #profile{
 
@@ -72,11 +72,8 @@ section{
 {
 flex-wrap: nowrap;
 
-}
+}*/
 
-.contact-info-container{
-    margin:0;
-}
 
 .contact-info-container p,
 .nav-link li a{
@@ -93,16 +90,25 @@ font-size: 1.25rem;
 
 .logo{
 font-size: 1.5rem;
-}
+} 
 .nav-links{
     flex-direction: column;
     gap:0.5rem;
     text-align: center;
+    margin-bottom: 5rem;
 }
 
-.section__pic-container{
+.contact-info-container{
+    margin:0;
+}
 
-    width: auto;
+  /* #contact, footer{
+        height:40vh;
+    } */
+
+/* .section__pic-container{
+
+    width: auto;rd
     height: 46vh;
     justify-content: center;
 }
@@ -120,5 +126,5 @@ font-size: 1.5rem;
 
 .text-container{
 text-align: justify;
-}
-}
+} */
+} 
