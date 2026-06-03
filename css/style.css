@@ -1,7 +1,3 @@
-/* ==========================================================================
-   Modern Developer Style System - Premium Theme Variable Configs
-   ========================================================================== */
-
 :root {
   --theme-bg: #0B0F19;
   --theme-card: #161F30;
@@ -17,7 +13,7 @@
   --font-display: 'Plus Jakarta Sans', sans-serif;
 }
 
-/* Global Document Normalization Defaults */
+
 * {
   margin: 0;
   padding: 0;
@@ -33,7 +29,7 @@ body {
   overflow-x: hidden;
 }
 
-/* Base Link Layout Styles */
+
 a {
   text-decoration: none;
   color: inherit;
@@ -41,9 +37,7 @@ a {
 
 .hidden { display: none !important; }
 
-/* ==========================================================================
-   Header Component & Glassmorphic Navigation Design Architecture
-   ========================================================================== */
+
 
 .navbar {
   position: fixed;
@@ -125,7 +119,7 @@ a {
   cursor: pointer;
 }
 
-/* Mobile Dropdown View Overlay Layout */
+
 .mobile-menu-panel {
   position: absolute;
   top: 80px;
@@ -153,9 +147,7 @@ a {
   border-top: 1px solid var(--border-subtle);
 }
 
-/* ==========================================================================
-   Hero Landing Grid & Premium Circle Visual Layout Mask Frame
-   ========================================================================== */
+
 
 .hero-section {
   min-height: 100vh;
@@ -166,7 +158,7 @@ a {
   position: relative;
 }
 
-/* Glow Background Effects */
+
 .glow-orb {
   position: absolute;
   border-radius: 50%;
@@ -339,7 +331,7 @@ a {
   color: var(--accent-emerald);
 }
 
-/* Premium Radial Profile Mask Layer */
+
 .hero-avatar-frame {
   position: relative;
   flex-shrink: 0;
@@ -384,9 +376,7 @@ a {
   filter: blur(4px);
 }
 
-/* ==========================================================================
-   Structural Module Containers & Grid Components Layout Definitions
-   ========================================================================== */
+
 
 .section-container {
   width: 100%;
@@ -424,7 +414,7 @@ a {
   margin: 16px auto 0 auto;
 }
 
-/* About Grid Framework layout */
+
 .about-cards-section {
   padding: 80px 0;
 }
@@ -542,7 +532,7 @@ a {
 .line-emerald { background-color: var(--accent-emerald); }
 .line-teal { background-color: var(--accent-teal); }
 
-/* Updated: 3-column subgrid to accommodate more skill items */
+
 .skills-subgrid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -573,7 +563,7 @@ a {
   color: var(--text-muted);
 }
 
-/* Showcase Portfolio Projects Cards */
+
 .projects-section {
   padding: 100px 0;
 }
@@ -656,7 +646,7 @@ a {
   letter-spacing: 0.5px;
 }
 
-/* Contact Platform Channel Layouts */
+
 .contact-section {
   padding: 80px 0 120px 0;
 }
@@ -730,7 +720,7 @@ a {
   overflow: hidden;
 }
 
-/* Simple Clean Structural Footer Definitions */
+
 .main-footer {
   background-color: var(--theme-footer);
   border-top: 1px solid var(--border-subtle);
@@ -757,9 +747,7 @@ a {
   color: var(--text-muted);
 }
 
-/* ==========================================================================
-   Responsive Adaptability & Mobile View Breakpoints Layout Controls
-   ========================================================================== */
+
 
 @media (max-width: 960px) {
   .hero-wrapper {
