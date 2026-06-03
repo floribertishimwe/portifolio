@@ -1,262 +1,297 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>portifolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="mediaquerries.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Floribert Ishimwe | Full-Stack Web Developer</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<nav id="desktop-nav">
-    <div class="logo">
-      Floribert ISHIMWE
-    </div>
-    <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#projects">Project</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-<nav id="humburger-nav">
-<div class="logo">Floribert ISHIMWE</div>
-<div class="humburger-menu">
-<div class="humburger-icon"  onclick="toggleMenu()">
-  <span></span>
-  <span></span>
-  <span></span>
-</div>
-<div class="menu-links"> 
-  <!-- The menu links will be toggled by JavaScript -->
-<ul>
-  <li><a href="#about" onclick="toggleMenu()">About</a></li>
-  <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-  <li><a href="#projects"  onclick="toggleMenu()">Project</a></li>
-  <li><a href="#contact"  onclick="toggleMenu()">Contact</a></li>
-</ul>
-</div>
 
-</div>
-</nav>
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">Floribert<span class="logo-dot">.</span></a>
+      
+      <nav class="desktop-nav">
+        <a href="#about" class="nav-item">About</a>
+        <a href="#experience" class="nav-item">Experience</a>
+        <a href="#projects" class="nav-item">Projects</a>
+        <a href="#contact" class="nav-btn">Contact Me</a>
+      </nav>
 
-<section id="profile">
-  <div class="section__pic-container">
-    <img src="./assets/profile-pic2.jpg" alt="Profile Picture" class="profile-pic">
-  </div>
-
-  <div class="section__text-container">
-    <p class="section__text__p1">Hello, I'm</p>
-    <h2 class="title">Floribert ISHIMWE</h2>
-    <p class="section__text__p2">Web Developer</p>
-
-    <div class="btn-container">
-      <button class="btn btn-color-2" onclick="window.open('./assets/resume-example2.pdf')">Download CV</button>
-      <button class="btn btn-color-1" onclick="location.href ='#Contact' ">Contact Info</button>
+      <button id="menu-toggle" class="mobile-toggle-btn" aria-label="Toggle Navigation Menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
     </div>
 
-    <div class="socials-container">
-      <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon" onclick="window.open('https://www.linkedin.com/in/floribert-ishimwe-891541284/', '_blank')">
-      <img src="./assets/github.png" alt="My GitHub profile" class="icon" onclick="window.open('https://github.com/floribertishimwe', '_blank')">
+    <div id="mobile-dropdown" class="mobile-menu-panel hidden">
+      <a href="#about" class="mobile-nav-item">About</a>
+      <a href="#experience" class="mobile-nav-item">Experience</a>
+      <a href="#projects" class="mobile-nav-item">Projects</a>
+      <a href="#contact" class="mobile-nav-btn">Contact Me</a>
     </div>
-  </div>
-</section>
+  </header>
 
-<section id="about">
-<p class="section__text__p1">Get To Know More</p>
-<h1 class="title">About Me</h1>
-<div class="section-container">
-<div class="section__pic-container">
-  <img src="./assets/profile-pic2.jpg" alt="Profile Picture" class="about-pic">
-</div>
-<div class="about-details-container">
-<div class="about-containers">
-  <div class="details-container">
-<img src="./assets/experience.png" alt="Experience Icon" class="icon">
-<h3>Experience</h3>
-<p>2+ years <br> Front-end development</p>
-  </div>
-<div class="details-container">
-<img src="./assets/education.png" alt="Education Icon" class="icon">
-<h3>Education</h3>
-<p>Bs.Sc. Bachelors Degree</p>
-</div>
-</div>
-<div class="text-container">
-<p>Savvy with expectation coding and project planning skills. Communicates effectively with clients 
-and peers to understand program requirements and develop innovative and functional solutions. 
-Exceptional technical design, quality testing and debugging skills. I am a quick learning and 
-courageous person regarding trying something new. </p>
-</div>
-</div>
-</div>
-<img src="./assets/arrow.png" alt="Arrow Icon" class="icon arrow" onclick="location.href ='./#experience'">
-</section>
+  <section class="hero-section" id="about">
+    <div class="glow-orb orb-top"></div>
+    <div class="glow-orb orb-bottom"></div>
 
-<section id="experience">
+    <div class="hero-wrapper">
+      <div class="hero-bio">
+        <div class="status-badge">
+          <span class="pulse-indicator"></span> Available for Opportunities
+        </div>
+        <h1 class="hero-title">
+          Hi, I'm <span class="gradient-name">Floribert Ishimwe</span>
+        </h1>
+        <p class="hero-subtitle">Full-Stack Web Developer</p>
+        <p class="hero-description">
+          Building fast, scalable, and responsive web applications with optimized front-end systems and secure database architectures.
+        </p>
+        
+        <div class="action-row">
+          <a href="#projects" class="btn-primary">View My Work</a>
+          <a href="./assets/Resume.pdf" download="Floribert_Ishimwe_CV.pdf" class="btn-cv">
+            <i class="fa-solid fa-download btn-icon-animate"></i> Download CV
+          </a>
+          <a href="#contact" class="btn-secondary">Let's Talk</a>
+        </div>
 
-  <p class="section__text__p1">Explore My</p>
-  <h1 class="title">Experience</h1>
-  <div class="experience-details-container">
-  <div class="about-containers">
-    <div class="details-container">
-      <h2 class="experience-sub-title">Frontend Development</h2>
-      <div class="article-container">
-        <article>
-          <img src="./assets/checkmark.png" alt="experience icon" class="icon">
-          <div>
-            <h3>HTML</h3>
-            <p>Experienced</p>
+        <div class="social-row">
+          <a href="https://www.linkedin.com/in/floribert-ishimwe-891541284/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a href="https://github.com/floribertishimwe" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-avatar-frame">
+        <div class="profile-glow-ring"></div>
+        <div class="avatar-mask-circle">
+          <img src="./assets/profile-pic2.png" alt="Floribert Ishimwe Portrait" class="avatar-image">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-cards-section">
+    <div class="section-container">
+      <div class="section-header">
+        <p class="section-pretitle">Get To Know More</p>
+        <h2 class="section-title">About Me</h2>
+        <div class="accent-bar"></div>
+      </div>
+
+      <div class="about-grid">
+        <div class="info-sidebar">
+          <div class="meta-card">
+            <div class="meta-icon-box"><i class="fa-solid fa-briefcase"></i></div>
+            <div class="meta-card-body">
+              <h3>Experience</h3>
+              <p class="meta-text-bold">2+ years</p>
+              <p class="meta-text-sub">Front-end & Full-stack</p>
+            </div>
+          </div>
+
+          <div class="meta-card">
+            <div class="meta-icon-box"><i class="fa-solid fa-graduation-cap"></i></div>
+            <div class="meta-card-body">
+              <h3>Education</h3>
+              <p class="meta-text-bold">B.Sc. Degree</p>
+              <p class="meta-text-sub">Computer Science / IT</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bio-main-card">
+          <h3>Driving Value Through Clean Architecture</h3>
+          <p>
+            Savvy with exceptional coding and structured project planning skills. I focus on communicating transparently and effectively with clients and cross-functional peers to seamlessly bridge the gap between abstract project specifications and functional production deployments.
+          </p>
+          <p>
+            Equipped with meticulous system design principles, modern visual optimization standards, and rigorous testing workflows. I remain an incredibly fast learner and highly adventurous engineer, always driven to master cutting-edge software paradigms and integrate powerful backend solutions.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience" class="skills-section">
+    <div class="section-container">
+      <div class="section-header">
+        <p class="section-pretitle">Explore My Tech Stack</p>
+        <h2 class="section-title">Technical Skills</h2>
+        <div class="accent-bar"></div>
+      </div>
+
+      <div class="skills-grid">
+
+        <!-- Frontend Card -->
+        <div class="skills-category-card">
+          <h3 class="category-heading"><span class="heading-line line-emerald"></span>Frontend Development</h3>
+          <div class="skills-subgrid">
+            <div class="skill-item">
+              <i class="fa-solid fa-circle-check item-check"></i>
+              <div><h4>HTML</h4><p>Experienced</p></div>
+            </div>
+            <div class="skill-item">
+              <i class="fa-solid fa-circle-check item-check"></i>
+              <div><h4>CSS  </h4><p>Experienced </p></div>
+            </div>
+            <div class="skill-item">
+              <i class="fa-solid fa-circle-check item-check"></i>
+              <div><h4>JavaScript (ES6+)</h4><p>Intermediate</p></div>
+            </div>
+            <div class="skill-item">
+              <i class="fa-solid fa-circle-check item-check"></i>
+              <div><h4>TypeScript</h4><p>Experienced</p></div>
+            </div>
+            <div class="skill-item">
+              <i class="fa-solid fa-circle-check item-check"></i>
+              <div><h4>React</h4><p>Experienced</p></div>
+            </div>
+            <div class="skill-item">
+              <i class="fa-solid fa-circle-check item-check"></i>
+              <div><h4>Next.js</h4><p>Experienced</p></div>
+            </div>
+            <div class="skill-item">
+              <i class="fa-solid fa-circle-check item-check"></i>
+              <div><h4>Material UI / Tailwind</h4><p>Intermediate</p></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Backend & Tools Card -->
+        <div class="skills-category-card">
+          <h3 class="category-heading"><span class="heading-line line-teal"></span>Backend & Tools</h3>
+          <div class="skills-subgrid">
+            <div class="skill-item">
+              <i class="fa-solid fa-circle-check item-check"></i>
+              <div><h4>Node.js</h4><p>Experienced</p></div>
+            </div>
+            <div class="skill-item">
+              <i class="fa-solid fa-circle-check item-check"></i>
+              <div><h4>Express.js</h4><p>Intermediate</p></div>
+            </div>
+            <div class="skill-item">
+              <i class="fa-solid fa-circle-check item-check"></i>
+              <div><h4>PostgreSQL</h4><p>Experienced</p></div>
+            </div>
+            <div class="skill-item">
+              <i class="fa-solid fa-circle-check item-check"></i>
+              <div><h4>Git / GitHub</h4><p>Intermediate</p></div>
+            </div>
+            <div class="skill-item">
+              <i class="fa-solid fa-circle-check item-check"></i>
+              <div><h4>Postman</h4><p>Intermediate</p></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="projects-section">
+    <div class="section-container">
+      <div class="section-header">
+        <p class="section-pretitle">Browse My Recent Projects</p>
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="accent-bar"></div>
+      </div>
+
+      <div class="projects-grid">
+        <article class="project-card">
+          <div class="project-thumbnail">
+            <i class="fa-solid fa-laptop-code thumbnail-fallback-icon"></i>
+          </div>
+          <div class="project-details">
+            <div>
+              <h3>Project Portfolio Architecture</h3>
+              <p>Highly responsive full-stack applications tailored to specifications, featuring optimization and dynamic layout layers.</p>
+            </div>
+            <div class="tag-row"><span>React</span><span>Node.js</span><span>PostgreSQL</span></div>
           </div>
         </article>
 
-        <article>
-          <img src="./assets/checkmark.png" alt="experience icon" class="icon">
-          <div>
-            <h3>CSS</h3>
-            <p>Experienced</p>
+        <article class="project-card">
+          <div class="project-thumbnail">
+            <i class="fa-solid fa-server thumbnail-fallback-icon"></i>
+          </div>
+          <div class="project-details">
+            <div>
+              <h3>API Control System</h3>
+              <p>Secure internal backends with robust middleware routing implementations, custom error handling schemas, and validation.</p>
+            </div>
+            <div class="tag-row"><span>Express</span><span>REST API</span><span>SQL</span></div>
           </div>
         </article>
-        <article>
-          <img src="./assets/checkmark.png" alt="experience icon" class="icon">
-          <div>
-            <h3>SASS</h3>
-            <p>Intermediate</p>
+
+        <article class="project-card">
+          <div class="project-thumbnail">
+            <i class="fa-solid fa-mobile-screen thumbnail-fallback-icon"></i>
           </div>
-        </article>
-        <article>
-          <img src="./assets/checkmark.png" alt="experience icon" class="icon">
-          <div>
-            <h3>Javascript</h3>
-            <p>Basic</p>
-          </div>
-        </article>
-        <article>
-          <img src="./assets/checkmark.png" alt="experience icon" class="icon">
-          <div>
-            <h3>Typescript</h3>
-            <p>Basic</p>
-          </div>
-        </article>
-        <article>
-          <img src="./assets/checkmark.png" alt="experience icon" class="icon">
-          <div>
-            <h3>Material UI</h3>
-            <p>Intermediate</p>
+          <div class="project-details">
+            <div>
+              <h3>Fluid UI Dashboards</h3>
+              <p>Interactive front-end user experiences focusing on accessible interactive structures and visual design systems.</p>
+            </div>
+            <div class="tag-row"><span>HTML5</span><span>SASS</span><span>Material UI</span></div>
           </div>
         </article>
       </div>
     </div>
+  </section>
 
-    <div class="details-container">
-      <h2 class="experience-sub-title">Backend Development</h2>
-      <div class="article-container">
-        <article>
-          <img src="./assets/checkmark.png" alt="experience icon" class="icon">
-          <div>
-            <h3>PostigreSQL</h3>
-            <p>Experienced</p>
-          </div>
-        </article>
+  <section id="contact" class="contact-section">
+    <div class="section-container">
+      <div class="section-header">
+        <p class="section-pretitle">Get In Touch</p>
+        <h2 class="section-title">Contact Me</h2>
+      </div>
 
-        <article>
-          <img src="./assets/checkmark.png" alt="experience icon" class="icon">
-          <div>
-            <h3>Node JS</h3> 
-            <p>Experienced</p>
+      <div class="contact-hub-card">
+        <a href="mailto:ifloribert2000@gmail.com" class="contact-action-channel">
+          <div class="channel-icon-box"><i class="fa-regular fa-envelope"></i></div>
+          <div class="channel-info">
+            <span class="channel-tag">Email Me</span>
+            <span class="channel-value">ifloribert2000@gmail.com</span>
           </div>
-        </article>
-        <article>
-          <img src="./assets/checkmark.png" alt="experience icon" class="icon">
-          <div>
-            <h3>Express JS</h3>
-            <p>Intermediate</p>
-          </div>
-        </article>
-        <article>
-          <img src="./assets/checkmark.png" alt="experience icon" class="icon">
-          <div>
-            <h3>Git</h3>
-            <p>Intermediate</p>
-          </div>
-        </article>
+        </a>
 
+        <a href="https://www.linkedin.com/in/floribert-ishimwe-891541284/" target="_blank" rel="noopener noreferrer" class="contact-action-channel">
+          <div class="channel-icon-box"><i class="fa-brands fa-linkedin-in"></i></div>
+          <div class="channel-info">
+            <span class="channel-tag">Connect</span>
+            <span class="channel-value">LinkedIn Profile</span>
+          </div>
+        </a>
+
+        <a href="https://github.com/floribertishimwe" target="_blank" rel="noopener noreferrer" class="contact-action-channel">
+          <div class="channel-icon-box"><i class="fa-brands fa-github"></i></div>
+          <div class="channel-info">
+            <span class="channel-tag">GitHub</span>
+            <span class="channel-value">floribertishimwe</span>
+          </div>
+        </a>
       </div>
     </div>
-  </div>
-  </div>
-<img src="./assets/arrow.png" alt="Arrow Icon" class="icon arrow" onclick="location.href ='./#projects'">
-</section>
-<section id="projects">
-<p class="section__text__p1">Browse My Recent</p>
-<h1 class="title">Projects</h1>
-<div class="experience-details-container">
-<div class="about-containers">
-<div class="details-container color-container">
-<div class="article-container">
-  <img src="./assets/project-1.png" alt="project 1" class="project-img">
-</div>
-<h2 class="experience-sub-title project-title">Project One</h2>
-<div class="btn-container">
-<button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/floribertishimwe'">Github</button>
-<button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/floribertishimwe'">Live Demo</button>
-</div>
-</div>
-<div class="details-container color-container">
-<div class="article-container">
-  <img src="./assets/project-2.png" alt="project 2" class="project-img">
-</div>
-<h2 class="experience-sub-title project-title">Project Two</h2>
-<div class="btn-container">
-<button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/floribertishimwe'">Github</button>
-<button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/floribertishimwe'">Live Demo</button>
-</div>
-</div>
-<div class="details-container color-container">
-<div class="article-container">
-  <img src="./assets/project-3.png" alt="project 3" class="project-img">
-</div>
-<h2 class="experience-sub-title project-title">Project Three</h2>
-<div class="btn-container">
-<button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/floribertishimwe'">Github</button>
-<button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/floribertishimwe'">Live Demo</button>
-</div>
-</div>
-</div>
-</div>
-<img src="./assets/arrow.png" alt="Arrow Icon" class="icon arrow" onclick="location.href ='#contact'">
-</section>
-<section id="contact">
-<p class="section__text__p1">Get in touch</p>
-<h1 class="title">Contact me</h1>
-<div class="contact-info-upper-container">
-  <div class="contact-info-container">
-    <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon">
-    <p><a href="mailto:ifloribert2000@gmail.com.">ifloribert2000@gmail.com</a>
-</p>
-  </div>
-    <div class="contact-info-container">
-    <img src="./assets/linkedin.png" alt="linkedIn" class="icon contact-icon">
-    <p><a href="https://www.linkedin.com/in/floribert-ishimwe-891541284/">LinkedIn</a>
-    </p>
-  </div>
-</div>
-</section>
+  </section>
 
-<footer>
-  <nav>
-    <div class="nav-links-container">
-    <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#projects">Project</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
+  <footer class="main-footer">
+    <div class="footer-nav">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
     </div>
-  </nav>
-<p>Copyright &copy;<span id="year"></span> IFloribert. All rights reserved.</p>
-</p>
-</footer>
-<script src="scripts.js"></script>
+    <p class="copyright-statement">&copy; <span id="runtime-year"></span> IFloribert. All rights reserved.</p>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
 </html>
